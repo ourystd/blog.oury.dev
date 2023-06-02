@@ -2,7 +2,7 @@ import type { Site, SocialObjects } from "./types";
 
 export const SITE: Site = {
   website: "https://blog.oury.dev/",
-  author: "Oury Diallo (@ourystd) ft. Sat Naing",
+  author: "Oury Diallo (@ourystd)",
   desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
   title: "OuryScript",
   ogImage: "astropaper-og.jpg",
