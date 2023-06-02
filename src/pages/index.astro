@@ -44,10 +44,6 @@ const socialCount = SOCIALS.filter(social => social.active).length;
         Il sera essentiellement question de dev front-end (React, NextJS...), design
         UI/UX et de tips en gestion de projet voire plus.
       </p>
-      <p>
-        Attachez vos ceintures (ou pas) et rejoignez-moi dans cette aventure
-        pour explorer, apprendre, créer et grandir ensemble.
-      </p>
       {
         // only display if at least one social link is enabled
         socialCount > 0 && (
@@ -127,7 +123,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   }
   #featured h2,
   #recent-posts h2 {
-    @apply text-2xl font-semibold tracking-wide;
+    @apply text-xl font-semibold tracking-wide lg:text-2xl;
   }
   .all-posts-btn-wrapper {
     @apply my-8 text-center;

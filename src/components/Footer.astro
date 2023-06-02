@@ -3,8 +3,6 @@ import Hr from "./Hr.astro";
 import LinkButton from "./LinkButton.astro";
 import Socials from "./Socials.astro";
 
-const currentYear = new Date().getFullYear();
-
 export interface Props {
   noMarginTop?: boolean;
 }
@@ -32,6 +30,7 @@ const { noMarginTop = false } = Astro.props;
         <LinkButton
           href="https://github.com/satnaing/astro-paper/"
           className="footer-link"
+          isExternal
         >
           AstroPaper theme
         </LinkButton>
