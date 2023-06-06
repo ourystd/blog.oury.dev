@@ -28,18 +28,16 @@ export async function getStaticPaths() {
   });
 }
 
-const { tag } = Astro.props;
-
 const posts = await getCollection("blog", ({ data }) => !data.draft);
 
-const tagPosts = getPostsByTag(posts, tag);
+const tagPosts = getPostsByTag(posts, Astro.props.tag);
 ---
 
 <Layout title={`Tag:${tag} | ${SITE.title}`}>
   <Header activeNav="tags" />
   <Main
     pageTitle={`Tag:${tag}`}
-    pageDesc={`All the articles with the tag "${tag}".`}
+    pageDesc={`Tous les articles avec le tag "${tag}".`}
   >
     <ul>
       {
