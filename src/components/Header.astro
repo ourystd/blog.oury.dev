@@ -7,7 +7,7 @@ import logoPNG from "/assets/logo.png";
 import logoSVG from "/assets/logo.svg";
 
 export interface Props {
-  activeNav?: "articles" | "tags" | "about" | "search";
+  activeNav?: "articles" | "tags" | "search";
 }
 
 const { activeNav } = Astro.props;
@@ -71,11 +71,6 @@ const { activeNav } = Astro.props;
               Tags
             </a>
           </li>
-          <!-- <li>
-            <a href="/about" class={activeNav === "about" ? "active" : ""}>
-              About
-            </a>
-          </li> -->
           <li>
             <LinkButton
               href="/search"
