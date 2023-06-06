@@ -1,23 +1,22 @@
 ---
 title: >
-  C'est peut-être un burnout : partage d'une expérience personnelle
+  C'est peut-être un burnout: partage d'une expérience personnelle
 author: Oury
 pubDatetime: 2023-05-06
 postSlug: c-est-peut-etre-un-burnout-pargate-d-une-experience-personnelle
 featured: false
-draft: false
+draft: true
 tags:
   - dev
   - career
 description:
-  Quelle que soit la discipline, il est toujours possible de s'améliorer. Le métier de développeur ne déroge pas à cette règle.
-  On peut tous y parvenir.
-  Dans cet article, découvrez 7 étapes pour y parvenir.
+  Fatigue, envie de rien, impossibilité de produire... Des sensations difficiles à vivre. Surtout sur une période prolongée.
+  C'est, entre autres, ce que j'ai vécu dernièrement et je vous le raconte dans cet article.
 ---
 
-![homme en burnout](/posts/burned-out.jpeg)
+DISCLAIMER: Je n'ai pas été diagnostiqué
 
-## Sommaire
+![homme en burnout](/posts/burned-out.jpeg)
 
 Bonjour, bonsoir. Peu importe l'heure à laquelle vous lisez cet article, je vous salue !
 
