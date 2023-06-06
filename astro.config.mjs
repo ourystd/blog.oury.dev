@@ -25,11 +25,18 @@ export default defineConfig({
   ],
   markdown: {
     remarkPlugins: [
-      remarkToc,
+      [
+        remarkToc,
+        {
+          heading:
+            "sommaire|table[ -]des[ -]matières|toc|table[ -]of[ -]contents",
+        },
+      ],
       [
         remarkCollapse,
         {
-          test: "Table of contents",
+          test: "Sommaire",
+          summary: "Ouvrir le sommaire",
         },
       ],
     ],
