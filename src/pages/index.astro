@@ -60,14 +60,16 @@ const maxRecentToDisplay = 5;
     <Hr />
 
     <section id="recent-posts">
-      <h2>Articles récents</h2>
+      <h2 class="mb-10">Articles récents</h2>
       <ul>
         {
           sortedPosts.map(
             ({ data }, index) =>
               index < maxRecentToDisplay - 1 && (
                 <Card
-                  href={`/articles/${slugify(data)}`}
+                  href={
+                    data.isExternal ? data.link : `/articles/${slugify(data)}`
+                  }
                   frontmatter={data}
                   secHeading={false}
                 />
