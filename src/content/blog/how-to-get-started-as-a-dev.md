@@ -1,8 +1,7 @@
 ---
-title: Comment se lancer dans le développement Web ?
+title: Comment se lancer dans le développement Web
 author: Oury
 pubDatetime: 2021-01-23
-postSlug: comment-se-lancer-dans-le-developpement-web
 featured: false
 draft: false
 isExternal: true

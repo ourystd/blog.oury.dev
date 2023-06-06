@@ -36,11 +36,11 @@ export default function Card({ href, frontmatter, secHeading = true }: Props) {
         )}
         {secHeading ? (
           <h2 className="text-lg font-medium decoration-dashed hover:underline lg:text-xl">
-            {title}
+            {decodeURIComponent(title)}
           </h2>
         ) : (
           <h3 className="text-lg font-medium decoration-dashed hover:underline lg:text-xl">
-            {title}
+            {decodeURIComponent(title)}
           </h3>
         )}
       </a>

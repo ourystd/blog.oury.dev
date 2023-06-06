@@ -1,11 +1,11 @@
 ---
-title: Devenir un.e meilleur.e développeur.se en 7 étapes
+title: >
+  C'est peut-être un burnout : partage d'une expérience personnelle
 author: Oury
-pubDatetime: 2019-12-01
+pubDatetime: 2023-05-06
+postSlug: c-est-peut-etre-un-burnout-pargate-d-une-experience-personnelle
 featured: false
 draft: false
-isExternal: true
-link: https://kahere.academy/tutorial/devenir-un-e-meilleur-e-developpeur-se-en-7-etapes
 tags:
   - dev
   - career
@@ -15,7 +15,7 @@ description:
   Dans cet article, découvrez 7 étapes pour y parvenir.
 ---
 
-![Devenir meilleur.e dev](/posts/become-a-better-dev.webp)
+![homme en burnout](/posts/burned-out.jpeg)
 
 ## Sommaire
 

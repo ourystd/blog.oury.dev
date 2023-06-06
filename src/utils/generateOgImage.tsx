@@ -2,6 +2,8 @@ import satori, { SatoriOptions } from "satori";
 import { SITE } from "@config";
 import { writeFile } from "node:fs/promises";
 import { Resvg } from "@resvg/resvg-js";
+import slugify from "./slugify";
+import { slug as slugger } from "github-slugger";
 
 const fetchFonts = async () => {
   // Regular Font
@@ -146,7 +148,10 @@ const generateOgImage = async (mytext = SITE.title) => {
 
     console.info("Output PNG Image  :", `${mytext}.png`);
 
-    await writeFile(`./.vercel/output/static/${mytext}.png`, pngBuffer);
+    await writeFile(
+      `./.vercel/output/static/${slugger(mytext)}.png`,
+      pngBuffer
+    );
   }
 
   return svg;
