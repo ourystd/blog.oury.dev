@@ -2,7 +2,7 @@
 title: Devenir meilleur développeur en 7 étapes ?
 author: Oury
 pubDatetime: 2019-12-01
-postSlug: devenir-un-e-meilleur-e-developpeur-se-en-7-etapes
+postSlug: devenir-un-meilleur-developpeur-en-7-etapes
 featured: false
 draft: false
 isExternal: true
