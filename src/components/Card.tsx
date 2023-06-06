@@ -23,9 +23,9 @@ export default function Card({ href, frontmatter, secHeading = true }: Props) {
             height="18"
             viewBox="0 0 24 24"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             style={{ fill: "transparent" }}
             className="mr-2 text-slate-400"
           >
