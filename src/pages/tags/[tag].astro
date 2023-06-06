@@ -28,9 +28,11 @@ export async function getStaticPaths() {
   });
 }
 
+const { tag } = Astro.props;
+
 const posts = await getCollection("blog", ({ data }) => !data.draft);
 
-const tagPosts = getPostsByTag(posts, Astro.props.tag);
+const tagPosts = getPostsByTag(posts, tag);
 ---
 
 <Layout title={`Tag:${tag} | ${SITE.title}`}>
