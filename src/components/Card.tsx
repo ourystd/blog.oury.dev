@@ -10,7 +10,7 @@ export interface Props {
 export default function Card({ href, frontmatter, secHeading = true }: Props) {
   const { title, pubDatetime, description, isExternal } = frontmatter;
   return (
-    <li className="mb-10">
+    <li className="mb-12">
       <a
         href={href}
         className="mb-1 flex items-center font-medium text-skin-accent decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0"
