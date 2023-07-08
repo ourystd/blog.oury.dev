@@ -9,11 +9,13 @@ export interface Props {
 
 export default function Card({ href, frontmatter, secHeading = true }: Props) {
   const { title, pubDatetime, description, isExternal } = frontmatter;
+  const displayTitle = decodeURIComponent(title);
+
   return (
     <li className="mb-12">
       <a
         href={href}
-        className="mb-1 flex items-center font-medium text-skin-accent decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0"
+        className="group flex items-center font-medium text-skin-accent decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0"
         target={isExternal ? "_blank" : "_self"}
       >
         {isExternal && (
@@ -27,7 +29,7 @@ export default function Card({ href, frontmatter, secHeading = true }: Props) {
             strokeLinecap="round"
             strokeLinejoin="round"
             style={{ fill: "transparent" }}
-            className="mr-2 text-slate-400"
+            className="mr-2 text-slate-400 opacity-80 group-hover:text-slate-50 group-hover:opacity-100"
           >
             <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
             <polyline points="15 3 21 3 21 9"></polyline>
@@ -36,11 +38,11 @@ export default function Card({ href, frontmatter, secHeading = true }: Props) {
         )}
         {secHeading ? (
           <h2 className="text-lg font-medium decoration-dashed hover:underline lg:text-xl">
-            {decodeURIComponent(title)}
+            {displayTitle}
           </h2>
         ) : (
           <h3 className="text-lg font-medium decoration-dashed hover:underline lg:text-xl">
-            {decodeURIComponent(title)}
+            {displayTitle}
           </h3>
         )}
       </a>
