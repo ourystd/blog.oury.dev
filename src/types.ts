@@ -3,6 +3,7 @@ export type Site = {
   author: string;
   desc: string;
   title: string;
+  logoText: string;
   ogImage: string;
   lightAndDarkMode: boolean;
   postPerPage: number;

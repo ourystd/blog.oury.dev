@@ -3,9 +3,12 @@ import type { Site, SocialObjects } from "./types";
 export const SITE: Site = {
   website: "https://blog.oury.dev/",
   author: "Oury Diallo (@ourystd)",
-  desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
-  title: "OuryScript",
-  ogImage: "astropaper-og.jpg",
+  desc: "Ici, je compte partager mes expériences, réflexions et découvertes dans l'univers en constante évolution de la tech.\
+  Il sera essentiellement question de dev front-end (React, NextJS...), design UI/UX \
+  et de tips en gestion de projet voire plus.",
+  title: "OuryScript | Parlons dev front-end et plus",
+  logoText: "OuryScript",
+  ogImage: "og-img-default.png",
   lightAndDarkMode: true,
   postPerPage: 5,
 };

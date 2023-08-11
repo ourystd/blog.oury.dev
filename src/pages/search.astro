@@ -5,7 +5,7 @@ import Layout from "@layouts/Layout.astro";
 import Main from "@layouts/Main.astro";
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
-import Search from "@components/Search";
+import SearchBar from "@components/Search";
 
 // Retrieve all articles
 const posts = await getCollection("blog", ({ data }) => !data.draft);
@@ -18,10 +18,13 @@ const searchList = posts.map(({ data }) => ({
 }));
 ---
 
-<Layout title={`Search | ${SITE.title}`}>
+<Layout
+  title={`Recherchez | ${SITE.title}`}
+  description="Accédez aux articles qui vous entéressent en entrant un mot clé"
+>
   <Header activeNav="search" />
   <Main pageTitle="Recherche" pageDesc="Rechercher parmis les articles publiés">
-    <Search client:load searchList={searchList} />
+    <SearchBar client:load searchList={searchList} />
   </Main>
   <Footer />
 </Layout>

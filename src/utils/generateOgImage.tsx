@@ -2,7 +2,6 @@ import satori, { SatoriOptions } from "satori";
 import { SITE } from "@config";
 import { writeFile } from "node:fs/promises";
 import { Resvg } from "@resvg/resvg-js";
-import slugify from "./slugify";
 import { slug as slugger } from "github-slugger";
 
 const fetchFonts = async () => {
@@ -108,7 +107,7 @@ const ogImage = (text: string) => {
             </span>
 
             <span style={{ overflow: "hidden", fontWeight: "bold" }}>
-              {SITE.title}
+              {SITE.logoText}
             </span>
           </div>
         </div>
@@ -140,6 +139,7 @@ const options: SatoriOptions = {
 const generateOgImage = async (mytext = SITE.title) => {
   const svg = await satori(ogImage(mytext), options);
 
+  console.log(svg);
   // render png in production mode
   if (import.meta.env.MODE === "production") {
     const resvg = new Resvg(svg);

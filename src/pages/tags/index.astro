@@ -13,7 +13,10 @@ const posts = await getCollection("blog");
 let tags = getUniqueTags(posts);
 ---
 
-<Layout title={`Tags | ${SITE.title}`}>
+<Layout
+  title={`Tags | ${SITE.title}`}
+  description="Explorez les articles selon les thématiques qui vous intéressent"
+>
   <Header activeNav="tags" />
   <Main pageTitle="Tags" pageDesc="Tous les tags utilisés dans les articles.">
     <ul>

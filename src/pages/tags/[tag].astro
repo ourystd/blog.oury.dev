@@ -35,10 +35,13 @@ const posts = await getCollection("blog", ({ data }) => !data.draft);
 const tagPosts = getPostsByTag(posts, tag);
 ---
 
-<Layout title={`Tag:${tag} | ${SITE.title}`}>
+<Layout
+  title={`Tag:${tag} | ${SITE.title}`}
+  description={`Explorez les articles associés au tag ${tag}`}
+>
   <Header activeNav="tags" />
   <Main
-    pageTitle={`Tag:${tag}`}
+    pageTitle={`Tag: ${tag}`}
     pageDesc={`Tous les articles avec le tag "${tag}".`}
   >
     <ul>

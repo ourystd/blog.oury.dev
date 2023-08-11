@@ -21,7 +21,10 @@ const prev = pageNum > 1 ? "" : "disabled";
 const next = pageNum < totalPages ? "" : "disabled";
 ---
 
-<Layout title={`Articles | ${SITE.title}`}>
+<Layout
+  title={`Articles | ${SITE.title}`}
+  description="Accédez à tous les articles publiés."
+>
   <Header activeNav="articles" />
   <Main pageTitle="Articles" pageDesc="Accédez à tous les articles publiés.">
     <ul>
