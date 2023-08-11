@@ -139,7 +139,6 @@ const options: SatoriOptions = {
 const generateOgImage = async (mytext = SITE.title) => {
   const svg = await satori(ogImage(mytext), options);
 
-  console.log(svg);
   // render png in production mode
   if (import.meta.env.MODE === "production") {
     const resvg = new Resvg(svg);
